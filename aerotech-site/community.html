@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AeroTech - Community</title>
+  <meta name="description" content="Share your builds, ask questions, and connect with other AeroTech users.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <div class="bubble" style="width:64px;height:64px;top:64px;left:4%;animation-delay:0s;" aria-hidden="true"></div>
+  <div class="bubble" style="width:34px;height:34px;top:150px;left:11%;animation-delay:1.4s;" aria-hidden="true"></div>
+  <div class="bubble" style="width:48px;height:48px;top:90px;right:6%;animation-delay:0.7s;" aria-hidden="true"></div>
+  <div class="bubble" style="width:26px;height:26px;top:170px;right:14%;animation-delay:2.1s;" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="logo" href="index.html">AeroTech</a>
+    <form class="site-search" role="search" action="#" method="get">
+      <label for="site-search-input" class="visually-hidden">Search products</label>
+      <input type="search" id="site-search-input" name="q" placeholder="Search parts...">
+      <button type="submit">Search</button>
+    </form>
+    <nav class="account-links" aria-label="Account">
+      <a href="#">My Account</a>
+      <a href="#">Sign In</a>
+      <a href="#">Cart (0)</a>
+    </nav>
+  </header>
+
+  <nav class="primary-nav" aria-label="Primary">
+    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav-list">Menu &#9776;</button>
+    <ul id="primary-nav-list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="build-checker.html">Build Checker</a></li>
+      <li><a href="community.html" aria-current="page">Community</a></li>
+      <li><a href="support.html">Support</a></li>
+      <li><a href="about-us.html">About</a></li>
+    </ul>
+  </nav>
+
+  <div class="page-layout">
+
+    <aside class="sidebar glass-panel" aria-label="Shop by category">
+      <h2>Shop by Category</h2>
+      <ul>
+        <li><a href="#"><span class="icon-dot" aria-hidden="true"></span>Graphics Cards</a></li>
+        <li><a href="#"><span class="icon-dot" aria-hidden="true"></span>Processors</a></li>
+        <li><a href="#"><span class="icon-dot" aria-hidden="true"></span>Cases</a></li>
+        <li><a href="#"><span class="icon-dot" aria-hidden="true"></span>Memory</a></li>
+        <li><a href="#"><span class="icon-dot" aria-hidden="true"></span>Storage</a></li>
+      </ul>
+
+      <div class="glass-panel sidebar-ad" style="margin-top:1rem;">
+        <h2 style="border:none;margin-bottom:0.3rem;">Featured Store</h2>
+        <img src="media/placeholder-product.svg" alt="New graphics card line now in stock">
+        <p style="font-size:0.8rem;">New GPU line &ndash; now in stock.</p>
+      </div>
+    </aside>
+
+    <main id="main-content" class="content-main">
+
+      <h1>Community</h1>
+      <p class="page-intro">Share your builds, ask questions, and connect with other AeroTech users.</p>
+
+      <ul class="forum-list glass-panel">
+        <li class="forum-row">
+          <span class="icon-dot" aria-hidden="true"></span>
+          <div class="forum-info">
+            <h3><a href="#">General Discussion</a></h3>
+            <p>1,204 threads</p>
+          </div>
+          <p class="last-post">Last post 2h ago</p>
+        </li>
+        <li class="forum-row">
+          <span class="icon-dot" aria-hidden="true"></span>
+          <div class="forum-info">
+            <h3><a href="#">Build Showcases</a></h3>
+            <p>836 threads</p>
+          </div>
+          <p class="last-post">Last post 2h ago</p>
+        </li>
+        <li class="forum-row">
+          <span class="icon-dot" aria-hidden="true"></span>
+          <div class="forum-info">
+            <h3><a href="#">Troubleshooting</a></h3>
+            <p>512 threads</p>
+          </div>
+          <p class="last-post">Last post 2h ago</p>
+        </li>
+        <li class="forum-row">
+          <span class="icon-dot" aria-hidden="true"></span>
+          <div class="forum-info">
+            <h3><a href="#">Off Topic</a></h3>
+            <p>298 threads</p>
+          </div>
+          <p class="last-post">Last post 2h ago</p>
+        </li>
+      </ul>
+
+      <h2 class="section-heading">Featured Build Showcases</h2>
+      <div class="showcase-grid">
+        <figure class="showcase-card">
+          <img src="media/placeholder-product.svg" alt="Build photo posted by username_1">
+          <figcaption>username_1</figcaption>
+        </figure>
+        <figure class="showcase-card">
+          <img src="media/placeholder-product.svg" alt="Build photo posted by username_2">
+          <figcaption>username_2</figcaption>
+        </figure>
+        <figure class="showcase-card">
+          <img src="media/placeholder-product.svg" alt="Build photo posted by username_3">
+          <figcaption>username_3</figcaption>
+        </figure>
+        <figure class="showcase-card">
+          <img src="media/placeholder-product.svg" alt="Build photo posted by username_4">
+          <figcaption>username_4</figcaption>
+        </figure>
+      </div>
+
+      <div class="community-footer glass-panel">
+        <p class="stats">12,480 Members &middot; 2,850 Threads &middot; 38,210 Posts</p>
+        <button type="button" id="new-thread-btn" class="btn btn-primary" aria-expanded="false" aria-controls="thread-form">Start a New Thread</button>
+      </div>
+
+      <form id="thread-form" class="thread-form glass-panel" action="#" method="post" hidden>
+        <h2>New Thread</h2>
+        <div class="form-body">
+          <label for="thread-category">Category</label>
+          <select id="thread-category" name="category">
+            <option>General Discussion</option>
+            <option>Build Showcases</option>
+            <option>Troubleshooting</option>
+            <option>Off Topic</option>
+          </select>
+
+          <label for="thread-title">Title</label>
+          <input type="text" id="thread-title" name="title">
+
+          <label for="thread-body">Message</label>
+          <textarea id="thread-body" name="body" rows="5"></textarea>
+
+          <p id="thread-message" class="form-message" role="status"></p>
+          <button type="submit" class="btn">Post Thread</button>
+        </div>
+      </form>
+
+    </main>
+
+    <aside class="sidebar glass-panel" aria-label="Quick links">
+      <h2>Quick Links</h2>
+      <ul>
+        <li><a href="#"><span class="icon-dot" aria-hidden="true"></span>Track Order</a></li>
+        <li><a href="#"><span class="icon-dot" aria-hidden="true"></span>Build Guides</a></li>
+        <li><a href="community.html"><span class="icon-dot" aria-hidden="true"></span>Community Forum</a></li>
+        <li><a href="support.html"><span class="icon-dot" aria-hidden="true"></span>Support</a></li>
+        <li><a href="about-us.html"><span class="icon-dot" aria-hidden="true"></span>About Us</a></li>
+      </ul>
+
+      <div class="glass-panel sidebar-ad">
+        <h2>Not sure what fits?</h2>
+        <a class="btn" href="build-checker.html">Build Checker</a>
+        <p style="font-size:0.8rem;margin-top:0.6rem;">Get a guaranteed-compatible parts list in minutes.</p>
+      </div>
+    </aside>
+
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>&copy; 2026 AeroTech. <a href="#">Privacy</a> | <a href="#">Terms</a> | <a href="contact.html">Contact</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/community.js"></script>
+</body>
+</html>
