@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
       return;
     }
 
-    threadMessage.textContent = "Thanks! Your thread has been posted (this is just a demo).";
+    threadMessage.textContent = "Thanks! Your thread has been posted.";
     threadMessage.className = "form-message ok";
     threadForm.reset();
   });
