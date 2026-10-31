@@ -1,4 +1,15 @@
-
+/* =========================================================
+   AeroTech - shared site JavaScript
+   Two interactive elements are implemented here:
+     1. Mobile navigation toggle (hamburger button) - JS toggles
+        a class, a CSS max-height transition animates it open/closed.
+     2. Build-tier selection on the homepage - JS toggles a
+        "selected" class, a CSS keyframe animation (glow) plays
+        conditionally on the selected card.
+   A third small enhancement (Store page "Add to Cart" buttons)
+   is included below too, using the same selected/added-class +
+   CSS-animation pattern.
+   ========================================================= */
 
 document.addEventListener("DOMContentLoaded", function () {
 

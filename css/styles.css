@@ -124,22 +124,6 @@ img {
 }
 
 
-.bubble {
-  position: fixed;
-  border-radius: 50%;
-  z-index: 1;
-  background: radial-gradient(circle at 32% 28%, rgba(255,255,255,0.95), rgba(255,255,255,0.15) 40%, rgba(180,225,255,0.25) 70%, rgba(180,225,255,0.05) 100%);
-  border: 1px solid rgba(255,255,255,0.6);
-  box-shadow: 0 0 12px rgba(255,255,255,0.5), inset 0 0 10px rgba(255,255,255,0.4);
-  pointer-events: none;
-  animation: bubble-float 6s ease-in-out infinite;
-}
-
-@keyframes bubble-float {
-  0%, 100% { transform: translateY(0); }
-  50%      { transform: translateY(-14px); }
-}
-
 
 .site-header {
   background: linear-gradient(180deg, #4fa2ff 0%, var(--xp-blue-dark) 45%, var(--xp-blue-darkest) 100%);
@@ -634,6 +618,7 @@ img {
 
 .pagination {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 0.4rem;
   margin: 1.6rem 0;
@@ -731,9 +716,6 @@ img {
   }
   .promo-row {
     grid-template-columns: 1fr;
-  }
-  .bubble {
-    display: none;
   }
 }
 

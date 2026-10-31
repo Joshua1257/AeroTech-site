@@ -1,4 +1,8 @@
-
+/* =========================================================
+   AeroTech - Community page
+   Shows / hides the "Start a New Thread" form and fakes
+   posting a thread (nothing is really saved).
+   ========================================================= */
 
 document.addEventListener("DOMContentLoaded", function () {
 
@@ -29,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
       return;
     }
 
-    threadMessage.textContent = "Thanks! Your thread has been posted.";
+    threadMessage.textContent = "Thanks! Your thread has been posted (this is just a demo).";
     threadMessage.className = "form-message ok";
     threadForm.reset();
   });
